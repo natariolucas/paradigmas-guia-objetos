@@ -1,15 +1,15 @@
 package unlam.paradigmas.objetos.ej01;
 
 public class Nota {
-	
-	// completar
+	private static int notaAprobacion = 7;
+	private int nota;
 	
     /**
      * pre : valorInicial está comprendido entre 0 y 10.
      * post: inicializa la Nota con el valor indicado.
      */
     public Nota(int valorInicial) {
-    	// completar
+    	this.nota = valorInicial;
     }
     
     /**
@@ -17,23 +17,20 @@ public class Nota {
      *       comprendido entre 0 y 10.
      */
     public int obtenerValor() {
-    	// completar
-    	return -1;
+    	return this.nota;
     }
     
     /**
      * post: indica si la Nota permite o no la aprobación.
      */
     public boolean aprobado() {
-    	// completar
-    	return false;
+    	return this.nota >= notaAprobacion;
     }
     
     /**
      * post: indica si la Nota implica desaprobación.
      */
     public boolean desaprobado() {
-    	// completar
-    	return false;
+    	return this.nota < notaAprobacion;
     }
 }
