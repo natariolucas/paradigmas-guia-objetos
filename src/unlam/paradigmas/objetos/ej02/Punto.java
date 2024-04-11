@@ -39,13 +39,17 @@ public class Punto {
 	}
 
 	public double distanciaAlOrigen() {
-		return this.distanciaAotroPunto(new Punto(0,0));
+		return this.distanciaAotroPunto(new Punto(0, 0));
 	}
 
 	public double distanciaAotroPunto(Punto otro) {
-		double distanciaX = Math.pow(this.x - otro.x, 2);
-		double distanciaY = Math.pow(this.y - otro.y, 2);
+		double distanciaX = cuadradoDeDiferencia(this.x, otro.x);
+		double distanciaY = cuadradoDeDiferencia(this.y, otro.y);
 
-		return Math.sqrt(Math.abs(distanciaX + distanciaY));
+		return Math.sqrt(distanciaX + distanciaY);
+	}
+
+	private static double cuadradoDeDiferencia(double a, double b) {
+		return Math.pow(a - b, 2);
 	}
 }
