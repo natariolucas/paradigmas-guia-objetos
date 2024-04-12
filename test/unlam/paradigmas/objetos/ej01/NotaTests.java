@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class NotaTests {
 
 	@Test
-	void notaLimiteAprobacion() {
+	void testNotaLimiteAprobacion() {
 		// arrange
 		Nota nota = new Nota(7);
 		
@@ -21,7 +21,7 @@ class NotaTests {
 	}
 	
 	@Test
-	void notaSuperiorLimiteAprobacion() {
+	void testNotaSuperiorLimiteAprobacion() {
 		// arrange
 		Nota nota = new Nota(9);
 		
@@ -35,7 +35,7 @@ class NotaTests {
 	}
 	
 	@Test
-	void notaInferiorLimiteAprobacion() {
+	void testNotaInferiorLimiteAprobacion() {
 		// arrange
 		Nota nota = new Nota(6);
 		
@@ -49,7 +49,7 @@ class NotaTests {
 	}
 	
 	@Test
-	void notaCero() {
+	void testNotaCero() {
 		// arrange
 		Nota nota = new Nota(0);
 				

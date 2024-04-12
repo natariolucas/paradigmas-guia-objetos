@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class PuntoTests {
 
 	@Test
-	void inicializacionXY() {
+	void testInicializacionXY() {
 		// arrange
 		double x = 2;
 		double y = 4;
@@ -19,7 +19,7 @@ class PuntoTests {
 	}
 	
 	@Test
-	void cambiosXY() {
+	void testCambiosXY() {
 		// arrange
 		double x = 2;
 		double y = 4;
@@ -39,7 +39,7 @@ class PuntoTests {
 	}
 	
 	@Test
-	void puntoSobreEjeX() {
+	void testPuntoSobreEjeX() {
 		// arrange
 		Punto punto = new Punto(1,0);
 		
@@ -49,7 +49,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void puntoSobreEjeY() {
+	void testPuntoSobreEjeY() {
 		// arrange
 		Punto punto = new Punto(0,1);
 		
@@ -60,7 +60,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void puntoSobreNingunEje() {
+	void tesPuntoSobreNingunEje() {
 		// arrange
 		Punto punto = new Punto(1,1);
 		
@@ -70,7 +70,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void puntoOrigen() {
+	void testPuntoOrigen() {
 		// arrange
 		Punto punto = new Punto(0,0);
 		
@@ -81,7 +81,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaHorizontalDosPuntos() {
+	void testDistanciaHorizontalDosPuntos() {
 		// arrange
 		Punto punto1 = new Punto(2,2);
 		Punto punto2 = new Punto(4,2);
@@ -93,7 +93,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaVerticalDosPuntos() {
+	void testDistanciaVerticalDosPuntos() {
 		// arrange
 		Punto punto1 = new Punto(2,2);
 		Punto punto2 = new Punto(2,4);
@@ -105,7 +105,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaHorizontalDosPuntosUnoOrigen() {
+	void testDistanciaHorizontalDosPuntosUnoOrigen() {
 		// arrange
 		Punto punto1 = new Punto(2,0);
 		Punto punto2 = new Punto(0,0);
@@ -117,7 +117,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaVerticalDosPuntosUnoOrigen() {
+	void testDistanciaVerticalDosPuntosUnoOrigen() {
 		// arrange
 		Punto punto1 = new Punto(0,2);
 		Punto punto2 = new Punto(0,0);
@@ -129,7 +129,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaDiagonalNegativaDosPuntos() {
+	void testDistanciaDiagonalNegativaDosPuntos() {
 		// arrange
 		Punto punto1 = new Punto(-Math.sqrt(2),-Math.sqrt(2));
 		Punto punto2 = new Punto(Math.sqrt(2),Math.sqrt(2));
@@ -141,7 +141,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaHorizontalOrigen() {
+	void testDistanciaHorizontalOrigen() {
 		// arrange
 		Punto punto = new Punto(2,0);
 		double distancia = 2;
@@ -151,7 +151,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaVerticalOrigen() {
+	void testDistanciaVerticalOrigen() {
 		// arrange
 		Punto punto = new Punto(0,2);
 		double distancia = 2;
@@ -161,7 +161,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaDiagonalNegativaOrigen() {
+	void testDistanciaDiagonalNegativaOrigen() {
 		// arrange
 		Punto punto = new Punto(-Math.sqrt(2),-Math.sqrt(2));
 		double distancia = 2;
@@ -171,7 +171,7 @@ class PuntoTests {
 	};
 	
 	@Test
-	void distanciaDiagonalPositivaOrigen() {
+	void testDistanciaDiagonalPositivaOrigen() {
 		// arrange
 		Punto punto = new Punto(Math.sqrt(2),Math.sqrt(2));
 		double distancia = 2;
