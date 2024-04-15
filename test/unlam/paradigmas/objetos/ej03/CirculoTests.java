@@ -16,10 +16,10 @@ class CirculoTests {
 		double areaEsperada = Math.PI * Math.pow(2, 2);
 		
 		// act, assert
-		assertEquals(circulo.obtenerRadio(), radioEsperado);
-		assertEquals(circulo.obtenerDiametro(), diametroEsperado);
-		assertEquals(circulo.obtenerPerimetro(), perimetroEsperado);
-		assertEquals(circulo.obtenerArea(), areaEsperada);
+		assertEquals(radioEsperado, circulo.obtenerRadio());
+		assertEquals(diametroEsperado, circulo.obtenerDiametro());
+		assertEquals(perimetroEsperado, circulo.obtenerPerimetro());
+		assertEquals(areaEsperada, circulo.obtenerArea());
 
 	}
 	
@@ -36,10 +36,10 @@ class CirculoTests {
 		circulo.cambiarRadio(nuevoRadio);
 		
 		// arrange
-		assertEquals(circulo.obtenerRadio(), nuevoRadio);
-		assertEquals(circulo.obtenerDiametro(), diametroEsperado);
-		assertEquals(circulo.obtenerPerimetro(), perimetroEsperado);
-		assertEquals(circulo.obtenerArea(), areaEsperada);
+		assertEquals(nuevoRadio, circulo.obtenerRadio());
+		assertEquals(diametroEsperado, circulo.obtenerDiametro());
+		assertEquals(perimetroEsperado, circulo.obtenerPerimetro());
+		assertEquals(areaEsperada, circulo.obtenerArea());
 	}
 	
 	@Test
@@ -56,10 +56,10 @@ class CirculoTests {
 		circulo.cambiarDiametro(nuevoDiametro);
 		
 		// arrange
-		assertEquals(circulo.obtenerDiametro(), nuevoDiametro);
-		assertEquals(circulo.obtenerRadio(), radioEsperado);
-		assertEquals(circulo.obtenerPerimetro(), perimetroEsperado);
-		assertEquals(circulo.obtenerArea(), areaEsperada);
+		assertEquals(nuevoDiametro, circulo.obtenerDiametro());
+		assertEquals(radioEsperado, circulo.obtenerRadio());
+		assertEquals(perimetroEsperado, circulo.obtenerPerimetro());
+		assertEquals(areaEsperada, circulo.obtenerArea());
 	}
 	
 	@Test
@@ -75,10 +75,10 @@ class CirculoTests {
 		circulo.cambiarPerimetro(nuevoPerimetro);
 		
 		// arrange
-		assertEquals(circulo.obtenerPerimetro(), nuevoPerimetro);
-		assertEquals(circulo.obtenerRadio(), radioEsperado);
-		assertEquals(circulo.obtenerDiametro(), diametroEsperado);
-		assertEquals(circulo.obtenerArea(), areaEsperada);
+		assertEquals(nuevoPerimetro, circulo.obtenerPerimetro());
+		assertEquals(radioEsperado, circulo.obtenerRadio());
+		assertEquals(diametroEsperado, circulo.obtenerDiametro());
+		assertEquals(areaEsperada, circulo.obtenerArea());
 	}
 	
 	@Test
@@ -94,10 +94,10 @@ class CirculoTests {
 		circulo.cambiarArea(nuevaArea);
 		
 		// arrange
-		assertEquals(Math.round(circulo.obtenerArea()), nuevaArea);
-		assertEquals(circulo.obtenerRadio(), radioEsperado);
-		assertEquals(circulo.obtenerDiametro(), diametroEsperado);
-		assertEquals(circulo.obtenerPerimetro(), perimetroEsperado);
+		assertEquals(nuevaArea, Math.round(circulo.obtenerArea()));
+		assertEquals(radioEsperado, circulo.obtenerRadio());
+		assertEquals(diametroEsperado, circulo.obtenerDiametro());
+		assertEquals(perimetroEsperado, circulo.obtenerPerimetro());
 	}
 	
 }

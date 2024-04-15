@@ -15,9 +15,9 @@ class CuboTests {
 		double volumenEsperado = 8;
 		
 		// act, assert
-		assertEquals(cubo.obtenerLado(), ladoEsperado);
-		assertEquals(cubo.obtenerAreaCara(), areaCaraEsperada);
-		assertEquals(cubo.obtenerVolumen(), volumenEsperado);
+		assertEquals(ladoEsperado, cubo.obtenerLado());
+		assertEquals(areaCaraEsperada, cubo.obtenerAreaCara());
+		assertEquals(volumenEsperado, cubo.obtenerVolumen());
 	}
 	
 	@Test
@@ -36,9 +36,9 @@ class CuboTests {
 		double volumen = cubo.obtenerVolumen();
 		
 		// assert
-		assertEquals(lado, ladoEsperado);
-		assertEquals(areaCara, areaCaraEsperada);
-		assertEquals(volumen, volumenEsperado);
+		assertEquals(ladoEsperado, lado);
+		assertEquals(areaCaraEsperada, areaCara);
+		assertEquals(volumenEsperado, volumen);
 	}
 	
 	@Test
@@ -57,9 +57,9 @@ class CuboTests {
 		double volumen = cubo.obtenerVolumen();
 		
 		// assert
-		assertEquals(areaCara, areaCaraEsperada);
-		assertEquals(lado, ladoEsperado);
-		assertEquals(volumen, volumenEsperado);
+		assertEquals(areaCaraEsperada, areaCara);
+		assertEquals(ladoEsperado, lado);
+		assertEquals(volumenEsperado, volumen);
 	}
 	
 	@Test
@@ -78,8 +78,8 @@ class CuboTests {
 		double volumen = cubo.obtenerVolumen();
 		
 		// assert
-		assertEquals(areaCara, areaCaraEsperada);
-		assertEquals(lado, ladoEsperado);
-		assertEquals(volumen, volumenEsperado);
+		assertEquals(areaCaraEsperada, areaCara);
+		assertEquals(ladoEsperado, lado);
+		assertEquals(volumenEsperado, volumen);
 	}
 }

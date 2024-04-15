@@ -14,8 +14,8 @@ class PuntoTests {
 		Punto punto = new Punto(x,y);
 		
 		// act, assert
-		assertEquals(punto.obtenerX(), x);
-		assertEquals(punto.obtenerY(), y);
+		assertEquals(x, punto.obtenerX());
+		assertEquals(y, punto.obtenerY());
 	}
 	
 	@Test
@@ -34,8 +34,8 @@ class PuntoTests {
 		punto.cambiarY(nuevoY);
 		
 		// assert
-		assertEquals(punto.obtenerX(), nuevoX);
-		assertEquals(punto.obtenerY(), nuevoY);
+		assertEquals(nuevoX, punto.obtenerX());
+		assertEquals(nuevoY, punto.obtenerY());
 	}
 	
 	@Test
@@ -88,8 +88,8 @@ class PuntoTests {
 		double distancia = 2;
 		
 		// act, assert
-		assertEquals(punto1.distanciaAotroPunto(punto2), distancia);
-		assertEquals(punto2.distanciaAotroPunto(punto1), distancia);
+		assertEquals(distancia, punto1.distanciaAotroPunto(punto2));
+		assertEquals(distancia, punto2.distanciaAotroPunto(punto1));
 	};
 	
 	@Test
@@ -100,8 +100,8 @@ class PuntoTests {
 		double distancia = 2;
 		
 		// act, assert
-		assertEquals(punto1.distanciaAotroPunto(punto2), distancia);
-		assertEquals(punto2.distanciaAotroPunto(punto1), distancia);
+		assertEquals(distancia, punto1.distanciaAotroPunto(punto2));
+		assertEquals(distancia, punto2.distanciaAotroPunto(punto1));
 	};
 	
 	@Test
@@ -112,8 +112,8 @@ class PuntoTests {
 		double distancia = 2;
 		
 		// act, assert
-		assertEquals(punto1.distanciaAotroPunto(punto2), distancia);
-		assertEquals(punto2.distanciaAotroPunto(punto1), distancia);
+		assertEquals(distancia, punto1.distanciaAotroPunto(punto2));
+		assertEquals(distancia, punto2.distanciaAotroPunto(punto1));
 	};
 	
 	@Test
@@ -124,8 +124,8 @@ class PuntoTests {
 		double distancia = 2;
 		
 		// act, assert
-		assertEquals(punto1.distanciaAotroPunto(punto2), distancia);
-		assertEquals(punto2.distanciaAotroPunto(punto1), distancia);
+		assertEquals(distancia, punto1.distanciaAotroPunto(punto2));
+		assertEquals(distancia, punto2.distanciaAotroPunto(punto1));
 	};
 	
 	@Test
@@ -136,8 +136,8 @@ class PuntoTests {
 		double distancia = 4;
 				
 		// act, assert
-		assertEquals(punto1.distanciaAotroPunto(punto2), distancia);
-		assertEquals(punto2.distanciaAotroPunto(punto1), distancia);
+		assertEquals(distancia, punto1.distanciaAotroPunto(punto2));
+		assertEquals(distancia, punto2.distanciaAotroPunto(punto1));
 	};
 	
 	@Test
@@ -147,7 +147,7 @@ class PuntoTests {
 		double distancia = 2;
 		
 		// act, assert
-		assertEquals(punto.distanciaAlOrigen(), distancia);
+		assertEquals(distancia, punto.distanciaAlOrigen());
 	};
 	
 	@Test
@@ -157,7 +157,7 @@ class PuntoTests {
 		double distancia = 2;
 		
 		// act, assert
-		assertEquals(punto.distanciaAlOrigen(), distancia);
+		assertEquals(distancia, punto.distanciaAlOrigen());
 	};
 	
 	@Test
@@ -167,7 +167,7 @@ class PuntoTests {
 		double distancia = 2;
 				
 		// act, assert
-		assertEquals(punto.distanciaAlOrigen(), distancia);
+		assertEquals(distancia, punto.distanciaAlOrigen());
 	};
 	
 	@Test
@@ -177,6 +177,6 @@ class PuntoTests {
 		double distancia = 2;
 				
 		// act, assert
-		assertEquals(punto.distanciaAlOrigen(), distancia);
+		assertEquals(distancia, punto.distanciaAlOrigen());
 	};
 }
